@@ -4,4 +4,7 @@ function displayTodos() {
   console.log('My todos:', todos);
 }
 
-displayTodos();
+function addTodos(todo) {
+  todos.push(todo);
+  displayTodos();
+}
