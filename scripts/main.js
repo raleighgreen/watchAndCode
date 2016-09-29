@@ -96,7 +96,11 @@ var view = {
   createDeleteButton: function() {
     var deleteButton = document.createElement('button');
     deleteButton.textContent = 'Delete';
-    deleteButton.className = 'deleteButton';
+    deleteButton.className = 'deleteButton';54
     return deleteButton;
   }
 };
+var todosUl = document.querySelector('ul');
+todosUl.addEventListener('click', function(event) {
+  console.log(event.target.parentNode.id);
+});
